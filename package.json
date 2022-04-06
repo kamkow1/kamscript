@@ -5,7 +5,9 @@
   "main": "src/index.js",
   "license": "MIT",
   "type": "module",
-  "bin": "./src/index.js",
+  "bin": {
+    "ks": "./src/index.js"
+  },
   "scripts": {
     "build": ""
   },
