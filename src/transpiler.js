@@ -5,7 +5,8 @@ export const transpiler = abstractSyntaxTree => {
         add: '+', 
         multiply: '*', 
         subtract: '-', 
-        divide: '/' 
+        divide: '/',
+        modulo: '%'
     };
 
     const transpileNode = abstractSyntaxTree => abstractSyntaxTree.type === Num ? transpileNum(abstractSyntaxTree) : transpileOp(abstractSyntaxTree);
