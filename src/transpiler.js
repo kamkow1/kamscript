@@ -1,8 +1,4 @@
 import { Num } from "./parser.js";
-import { add } from './functions.js';
-import { subtract } from "./functions.js";
-import { divide } from "./functions.js";
-import { multiply } from "./functions.js";
 
 export const transpiler = abstractSyntaxTree => {
     const opMap = { 
