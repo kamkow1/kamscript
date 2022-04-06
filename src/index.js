@@ -15,14 +15,24 @@ program
     .command('exec')
     .argument('<string>', 'path to file')
     .action((str) => {
-        const pathElements = str.split('/');
+        let path = str;
 
-        if (!pathElements[pathElements.length - 1].includes('.ks')) {
-            console.error('file extension not recognized! only .ks files are executable');
-            return;
+        const pathElements = str.split('/');
+        const name = pathElements[pathElements.length - 1];
+
+        if (!name.includes('.ks')) {
+
+            const pathWithIndex = path + '/index.ks';
+            console.log(pathWithIndex);
+
+            if (fs.existsSync(pathWithIndex)) {
+                path = pathWithIndex;
+            } else {
+                console.error('file extension not recognized! only .ks files are executable');
+                return;
+            }
         }
 
-        const path = str;
         const code = fs.readFileSync(path).toString('ascii');
 
         const transpiledProgram = transpiler(parser(lexer(code)));
