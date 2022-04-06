@@ -5,6 +5,10 @@
   "main": "src/index.js",
   "license": "MIT",
   "type": "module",
+  "bin": "./src/index.js",
+  "scripts": {
+    "build": ""
+  },
   "dependencies": {
     "commander": "^9.1.0",
     "fs": "^0.0.1-security"

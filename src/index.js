@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 import { parser } from "./parser.js";
 import { transpiler } from "./transpiler.js";
 import { lexer } from "./lexer.js";
