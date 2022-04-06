@@ -1,4 +1,4 @@
-const transpiler = ast => {
+export const transpiler = ast => {
     const opMap = { 
         sum: '+', 
         mul: '*', 
@@ -11,6 +11,6 @@ const transpiler = ast => {
     const transpileNum = ast => ast.val;
 
     const transpileOp = ast => `(${ast.expr.map(transpileNode).join(' ' + opMap[ast.val] + ' ')})`;
-    
+
     return transpileNode(ast);
   };

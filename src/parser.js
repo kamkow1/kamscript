@@ -1,7 +1,7 @@
 const Op = Symbol('op');
 const Num = Symbol('num');
 
-const parser = (tokens) => {
+export const parser = (tokens) => {
     let c = 0;
     
     const peek = () => tokens[c];
