@@ -4,5 +4,9 @@
   "description": "kamscript language interpreter",
   "main": "src/index.js",
   "license": "MIT",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "commander": "^9.1.0",
+    "fs": "^0.0.1-security"
+  }
 }
