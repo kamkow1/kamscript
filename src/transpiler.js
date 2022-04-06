@@ -6,11 +6,11 @@ export const transpiler = ast => {
         div: '/' 
     };
 
-    const transpileNode = ast => ast.type === Num ? transpileNum(ast) : transpileOp(ast);
+    const transpileNode = abstractSyntaxTree => abstractSyntaxTree.type === Num ? transpileNum(abstractSyntaxTree) : transpileOp(abstractSyntaxTree);
 
-    const transpileNum = ast => ast.val;
+    const transpileNum = abstractSyntaxTree => abstractSyntaxTree.val;
 
-    const transpileOp = ast => `(${ast.expr.map(transpileNode).join(' ' + opMap[ast.val] + ' ')})`;
+    const transpileOp = abstractSyntaxTree => `(${abstractSyntaxTree.expr.map(transpileNode).join(' ' + opMap[abstractSyntaxTree.val] + ' ')})`;
 
-    return transpileNode(ast);
+    return transpileNode(abstractSyntaxTree);
   };
