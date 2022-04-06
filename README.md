@@ -1,25 +1,19 @@
 # kamscript
 ## a simple scripting langauge interpreter implemented in javascript
 
-# table of contents
-1. (#installation)
-2. (#run)
-3. (#files)
-4. (#syntax)
-
-## [intallation] installation <a name="installation"></a>
+## installation
 to install kamscript interpreter, type in your terminal:
 ```properties
 npm i -g kamscript
 ```
 
-## [run] running your code <a name="run"></a>
+## running your code
 to run your code run:
 ```properties
 ks exec <path to file>
 ```
 
-## [file system] how do files work? <a name="files"></a>
+## how do files work?
 in order to run a kamscript file, it needs to have a &#10071; .ks extension &#10071;
 you can execute a script without specifying the file name
 ```properties
@@ -28,7 +22,7 @@ ks exec <path to directory>
 the kamscript interpreter will search for index.ks file by default
 if it doesn't find such a file, an error will be thrown.
 
-## [syntax] kamscript syntax <a name="syntax"></a>
+## kamscript syntax
 all examples are in the "examples" directory.
 operators:
         add number1 number2 number3 ...
