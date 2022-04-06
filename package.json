@@ -3,5 +3,6 @@
   "version": "1.0.0",
   "description": "kamscript language interpreter",
   "main": "src/index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "type": "commonjs"
 }
