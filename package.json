@@ -4,5 +4,5 @@
   "description": "kamscript language interpreter",
   "main": "src/index.js",
   "license": "MIT",
-  "type": "commonjs"
+  "type": "module"
 }

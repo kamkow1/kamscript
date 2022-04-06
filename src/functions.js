@@ -1,7 +1,7 @@
 export const sum = (...operands) => operands.reduce((acc, curr) => acc + curr);
 
-export const subtract = (...operands) => operands.reduce((acc, curr) => acc - curr);
+export const sub = (...operands) => operands.reduce((acc, curr) => acc - curr);
 
-export const multiply = (...operands) => operands.reduce((acc, curr) => acc * curr, 1);
+export const mul = (...operands) => operands.reduce((acc, curr) => acc * curr, 1);
 
-export const divide = (...operands) => operands.reduce((acc, curr) => acc / curr, 0);
+export const div = (...operands) => operands.reduce((acc, curr) => acc / curr, 0);

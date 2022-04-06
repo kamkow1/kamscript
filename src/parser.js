@@ -1,5 +1,5 @@
-const Op = Symbol('op');
-const Num = Symbol('num');
+export const Op = Symbol('op');
+export const Num = Symbol('num');
 
 export const parser = (tokens) => {
     let c = 0;
